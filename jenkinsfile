@@ -12,9 +12,3 @@ pipeline {
               
         }
     }
-}
-
-# git config --global user.name “sundeepbhatia1989”
-# git config --global user.email "sundeepbhatia1989@gmail.com"
-
-  git config --global user.name "Your Name"
