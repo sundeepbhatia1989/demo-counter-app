@@ -9,6 +9,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/sundeepbhatia1989/demo-counter-app'
             }
         }
-              
+          stage('Unit test') {
+            steps {
+                sh 'mvn test'
+            }
+        }    
         }
     }
