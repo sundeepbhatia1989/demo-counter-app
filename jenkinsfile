@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    tools {
+       terraform 'Terraform v1.3.6'
+    } 
+    stages {
+        stage('Git Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/sundeepbhatia1989/demo-counter-app'
+            }
+        }
+              
+        }
+    }
+}
+
+# git config --global user.name “sundeepbhatia1989”
+# git config --global user.email "sundeepbhatia1989@gmail.com"
+
+  git config --global user.name "Your Name"
